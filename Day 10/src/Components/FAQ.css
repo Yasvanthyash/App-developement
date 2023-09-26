@@ -1,0 +1,61 @@
+
+.faq-page {
+    font-family: "Work Sans", sans-serif;
+    background-color: #f9f9f9;
+  }
+
+  .faq-heading {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .faq-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .faq-question {
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+    background-color: #f9f9f9; 
+  }
+
+  .faq-item{
+    margin-top: 20px;
+  }
+  
+  .faq-answer {
+    margin: auto;
+    width: 50%;
+    padding: auto;
+    background-color: white; /* Background color for the FAQ answer */
+    display: none; /* Initially hide the answer */
+    color:black;
+  }
+  
+  .faq-question.active, .faq-question:hover {
+    background-color: #eee; 
+  }
+  
+  .faq-answer.active {
+    display: block; 
+  }
+  
+  .faq-question:after {
+    content: "\02795"; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .faq-question.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
